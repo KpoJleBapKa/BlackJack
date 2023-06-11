@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -11,7 +11,7 @@ namespace BlackJack
         private Hand playerHand;
         private Hand dealerHand;
         private int balance = 100; // Початковий баланс гравця
-        private int playerBalance = 100; // Початковий баланс гравця
+        private int playerBalance = 100; 
         private int currentBet = 0; // Поточна ставка гравця
         private int betAmount = 0;
      
@@ -55,7 +55,6 @@ namespace BlackJack
             currentBet = bet;
 
             // Почати гру
-            // Додайте код для початку гри, наприклад, роздавання карт і т.д.
         }
         private void UpdatePlayerBalance()
         {
@@ -63,8 +62,6 @@ namespace BlackJack
             label1.Text = "Гравець: " + playerBalance.ToString();
 
         }
-
-        // Додайте інші методи та логіку гри, які потрібні
 
         private void EndGame(bool isWin)
         {
